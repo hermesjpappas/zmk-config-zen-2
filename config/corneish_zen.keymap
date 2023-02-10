@@ -35,12 +35,12 @@
 // -----------------------------------------------------------------------------------------
 // |  "`" |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // |      |     |     |  (  |  )  |  {  |   |  }  |  -  |  +  |     |     |   \  |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 |   [ |   |  ]  |     |     |     |     |  ENT |
+// |  |         |     |     |     |   [ |   |  ]  |     |     |     |     |  ENT |
 //                    | CTL | FIN | GUI |   | SPC |     | ALT |
                         bindings = <
    &kp GRAVE  &kp N1   &kp N2 &kp N3  &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &trans &trans &trans &kp LPAR &kp RPAR &kp LBRC    &kp RBRC &kp MINUS &kp PLUS &trans &trans &kp BSLH
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp LBKT &kp RBKT &trans  &trans  &trans &trans &kp RET
+   &trans &trans &trans &tranhs &trans  &kp LBKT &kp RBKT &trans  &trans  &trans &trans &kp RET
                           	        &kp LCTRL     &mo 3       &kp LGUI   &kp SPACE  &trans   &kp RALT
                         >;
                 };
@@ -65,14 +65,14 @@
 third_layer {
                         label = "FUNCTIONS";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  F1 |  F2 |  F3 |  F4 |     |   | PRV |PLAY |stop |NEXT |     | DEL  |
-// |  ESC |  F5 |  F6 |  F7 |  F8 |     |   |  <- |down |  up |  -> |     |      |
-// | SHIFT|  F9 | F10 | F11 | F12 |     |   |vol- | mute|     |vol+ |     |  ENT |
+// |  TAB |  F1 |  F2 |  F3 |  F4   BT1 |   | PRV |PLAY |stop |NEXT |     | DEL  |
+// |  ESC |  F5 |  F6 |  F7 |  F8 | BT2 |   |  <- |down |  up |  -> |     |      |
+// | SHIFT|  F9 | F10 | F11 | F12 | BT3 |   |vol- | mute|     |vol+ |     |  ENT |
 //                    | CTL |     | GUI |   | SPC |     | ALT |
                         bindings = <
-   &kp TAB  &kp F1 &kp F2 &kp F3 &kp F4 &trans   &kp C_PREV &kp C_PP  &kp C_STOP &kp C_NEXT &trans &kp DEL
-   &kp ESC &kp F5 &kp F6 &kp F7 &kp F8 &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHIFT &kp F9 &kp F10 &kp F11 &kp F12  &trans &kp C_VOL_DN &kp C_MUTE  &trans  &kp C_VOL_UP &trans &kp RET
+   &kp TAB  &kp F1 &kp F2 &kp F3 &kp F4 &bt BT_SEL 0   &kp C_PREV &kp C_PP  &kp C_STOP &kp C_NEXT &trans &kp DEL
+   &kp ESC &kp F5 &kp F6 &kp F7 &kp F8 &bt BT_SEL 1    &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHIFT &kp F9 &kp F10 &kp F11 &kp F12  &bt BT_SEL 2 &kp C_VOL_DN &kp C_MUTE  &trans  &kp C_VOL_UP &trans &kp RET
                     	      &kp LCTRL     &trans       &kp LGUI   &kp SPACE  &mo 3   &kp RALT
                         >;
                 };
