@@ -59,8 +59,8 @@
 
             bindings = <
 &kp GRAVE  &kp N1           &kp N2          &kp N3          &kp N4           &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans     &none            &none           &kp KP_LPAR     &kp KP_RPAR      &kp LBRC           &kp RBRC         &kp KP_MINUS     &kp KP_PLUS      &none            &none     &kp BSLH
-&trans     &none            &none           &none           &none            &kp LBKT           &kp RBKT         &none            &none            &none            &none     &kp ENT
+&trans     &none            &none           &kp LPAR        &kp RPAR         &kp LBRC           &kp RBRC         &kp MINUS        &kp PLUS         &none            &none     &kp BSLH
+&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &kp LBKT           &kp RBKT         &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none     &kp ENT
                                             &trans          &trans           &trans             &trans           &trans           &trans
             >;
         };
