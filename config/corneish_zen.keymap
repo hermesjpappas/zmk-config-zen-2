@@ -61,7 +61,7 @@
 &kp GRAVE  &kp N1           &kp N2          &kp N3             &kp N4          &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans     &none            &none           &kp LPAR           &kp RPAR        &kp LBRC           &kp RBRC         &kp MINUS        &kp PLUS         &none            &none     &kp BSLH
 &trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR &kp LBKT           &kp RBKT         &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none     &kp ENTER
-                                            &trans             &trans          &trans             &trans           &trans           &trans
+                                            &trans             &mo 3          &trans             &trans           &trans           &trans
             >;
         };
 
@@ -78,7 +78,7 @@
 &kp TILDE  &kp EXCL      &kp AT        &kp HASH        &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
 &trans     &none         &none         &kp KP_LPAR     &kp KP_RPAR     &kp LBRC     &kp RBRC   &kp UNDER  &kp KP_EQUAL   &none     &none     &kp PIPE
 &trans     &none         &none         &none           &none           &kp LBKT     &kp LBKT   &none      &none          &none     &none     &none
-                                       &trans          &trans          &trans       &trans     &trans     &trans
+                                       &trans          &trans          &trans       &trans     &mo 3     &trans
             >;
         };
 
