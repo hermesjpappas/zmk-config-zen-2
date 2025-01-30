@@ -77,7 +77,7 @@
             bindings = <
 &kp TILDE  &kp EXCL      &kp AT        &kp HASH        &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &kp LPAR  &kp RPAR  &kp BSPC
 &trans     &none         &none         &kp LPAR        &kp RPAR        &kp LBRC     &kp RBRC   &kp UNDER  &kp EQUAL   &none     &none     &kp PIPE
-&trans     &none         &none         &none           &none           &kp LBKT     &kp LBKT   &none      &none          &none     &none     &none
+&trans     &none         &none         &none           &none           &kp LBKT     &kp RBKT   &none      &none          &none     &none     &none
                                        &trans          &trans          &trans       &trans     &mo 3     &trans
             >;
         };
